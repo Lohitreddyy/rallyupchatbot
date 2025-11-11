@@ -21,11 +21,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         {
           role: "system",
           content:
-            "You write authentic LinkedIn posts with founder energy. Keep whitespace rhythm and lower-case tone. Do NOT reuse exact sentences; always create fresh wording."
+            "You are RallyUp AI — a writing assistant that creates authentic LinkedIn posts. Write in a professional yet conversational tone. Keep the natural whitespace rhythm for readability. Never repeat exact phrases from training data — always create fresh, human-sounding wording. Avoid including any real names, company tags, or user mentions unless explicitly provided in the prompt."
         },
         { role: "user", content: prompt }
       ],
-      temperature: 0.4,
+      temperature: 0.7,
       top_p: 0.9,
       max_output_tokens: 500
     });
