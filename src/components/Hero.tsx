@@ -1,13 +1,11 @@
 import React from "react";
-import PromptForm from "./PromptForm";
 
-export default function Hero({ onGenerate }: { onGenerate: (p: string) => void }) {
+export default function Hero() {
   const hour = new Date().getHours();
   const greeting = hour < 12 ? "morning" : hour < 18 ? "afternoon" : "evening";
 
   return (
     <section className="relative z-0 w-full max-w-3xl mx-auto text-center py-10 md:py-14 px-4 space-y-6">
-
       <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
         <span className="bg-gradient-to-b from-neutral-900 to-neutral-500 dark:from-zinc-50 dark:to-zinc-400 bg-clip-text text-transparent">
           Amplify your mission,
@@ -25,10 +23,6 @@ export default function Hero({ onGenerate }: { onGenerate: (p: string) => void }
       <p className="text-sm md:text-base text-zinc-700 dark:text-zinc-400">
         Good {greeting}. What can RallyUp AI help you write today?
       </p>
-
-      <div className="w-full max-w-2xl mx-auto pointer-events-auto">
-        <PromptForm onGenerate={onGenerate} />
-      </div>
     </section>
   );
 }

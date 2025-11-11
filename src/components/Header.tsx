@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header className="relative w-full"> {/* was: fixed left-0 top-0 z-20 w-full */}
+    <header className="relative w-full">
       <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-4">
         <img
           src="/favicon.ico"
