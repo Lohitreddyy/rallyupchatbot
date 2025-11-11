@@ -1,8 +1,6 @@
 import React from "react";
 
 export default function Hero() {
-  const hour = new Date().getHours();
-  const greeting = hour < 12 ? "morning" : hour < 18 ? "afternoon" : "evening";
 
   return (
     <section className="relative z-0 w-full max-w-3xl mx-auto text-center py-10 md:py-14 px-4 space-y-6">
@@ -21,7 +19,7 @@ export default function Hero() {
       </h2>
 
       <p className="text-sm md:text-base text-zinc-700 dark:text-zinc-400">
-        Good {greeting}. What can RallyUp AI help you write today?
+        What can RallyUp AI help you write today?
       </p>
     </section>
   );

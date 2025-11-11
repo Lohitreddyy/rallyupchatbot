@@ -8,6 +8,17 @@ export default function App() {
   const [model, setModel] = React.useState(
     "ft:gpt-4o-mini-2024-07-18:personal:projectv3:CaCoCqeW"
   );
+
+<select
+  className="rounded-md border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 px-3 py-2 text-sm"
+  value={model}
+  onChange={(e) => setModel(e.target.value)}
+>
+  <option value="ft:gpt-4o-mini-2024-07-18:personal:projectv3:CaCoCqeW">
+    RallyUp AI
+  </option>
+</select>
+
   const [messages, setMessages] = React.useState<ChatMessage[]>([]);
   const [loading, setLoading] = React.useState(false);
   const [error, setError] = React.useState("");
