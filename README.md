@@ -13,7 +13,7 @@ An AI-powered LinkedIn post generator designed to help founders, employees and m
 - **Keyboard Shortcuts**: Submit with `Cmd/Ctrl + Enter` for faster workflow
 
 ## Getting Started
-
+- ** The main app implementation is in branch update-app-frontend
 ### Prerequisites
 
 - Node.js 18+ and npm
